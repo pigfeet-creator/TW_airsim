@@ -53,9 +53,12 @@ D_PEN_CN     = 84.0              # Chinese tanker orbit to Strait (over own terr
 CHINA_COAST = [(30.0,121.6),(28.5,121.5),(27.0,120.6),(26.0,119.6),(25.0,119.0),
                (24.0,118.0),(23.4,116.7),(22.8,115.4),(22.5,114.0),(21.9,112.5)]
 
-# combat radius, nm (unrefuelled, includes reserves)
-RADIUS = {"F/A-18E":400, "F-35C":620, "F-35A":670, "F-15E":790, "F-15EX":790,
-          "F-22A":590, "CCA":700, "J-10C":450, "J-16":800, "J-20":1100}
+# combat radius, nm (unrefuelled, air-to-air fit, includes reserves)
+# Typical CAP fit per type: stealth types (F-35, F-22, J-20) internal fuel only;
+# F/A-18E with 2 EFTs, J-10C with 3 tanks, F-15E/EX with CFTs; J-16 carries no
+# external tanks (Flanker internal fuel)
+RADIUS = {"F/A-18E":400, "F-35C":670, "F-35A":590, "F-15E":790, "F-15EX":790,
+          "F-22A":530, "CCA":700, "J-10C":450, "J-16":800, "J-20":1100}
 
 US_BASES = [  # (name, coords, ramp capacity in fighter spots)
     ("Kyushu",       (32.80,131.00), 120),

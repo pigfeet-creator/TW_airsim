@@ -6,16 +6,16 @@ Open-source parametric model of air-to-air attrition over the Strait, assuming t
 
 **Out of scope, and each omitted mechanism favours the US:** mainland SAM coverage reaching over the Strait, attrition of AEW and tankers, ballistic and cruise missile attack on the basing itself, and Chinese production replacement during the campaign. The model also assumes the US fights to annihilation; a real commander withdraws at some attrition threshold, having killed proportionally fewer.
 
-**Two things that look like pro-China omissions but are not.** Taiwanese aircraft are out of action in the opening phase and are not a factor in the decisive engagement modelled here. Allied JASDF aircraft are subject to the identical ceiling — the constraint derived in B1 is on airframes in theatre rather than on US airframes, since allied fighters fly the same distances with the same tanker dependence. Two hundred of them would require roughly 37 additional tankers costing ~111 ramp spots, against a system already saturated at 607 of 620. Allied participation changes the composition of the 390, not the total.
+**Two things that look like pro-China omissions but are not.** Taiwanese aircraft are out of action in the opening phase and are not a factor in the decisive engagement modelled here. Allied JASDF aircraft are subject to the identical ceiling — the constraint derived in B1 is on airframes in theatre rather than on US airframes, since allied fighters fly the same distances with the same tanker dependence. Two hundred of them would require roughly 39 additional tankers costing ~117 ramp spots, against a system already saturated at 619 of 620. Allied participation changes the composition of the 390, not the total.
 
 **The pro-China assumptions are confined to two estimated parameters:** the maintenance ceiling of 4 sorties per aircraft per day, which likely overstates Chinese sortie generation, and the 900–1,100 in-range figure, which is an estimated theatre allocation.
 
 **Two different ratios appear throughout, and they are not the same number:**
 
-- **Force ratio** (e.g. "4.3:1") — Chinese aircraft airborne over the Strait divided by US aircraft airborne over the Strait, at any given moment. This is the primary output of the model.
+- **Force ratio** (e.g. "5.3:1") — Chinese aircraft airborne over the Strait divided by US aircraft airborne over the Strait, at any given moment. This is the primary output of the model.
 - **Loss exchange ratio, LER** (e.g. "1:2.9") — US aircraft lost per Chinese aircraft lost. Derived from the engagement model, not from the force ratio directly.
 
-They are linked by the empirical exponent α ≈ 0.557 derived in D1: **LER ≈ force_ratio^0.557**. A 4.3:1 force ratio therefore implies roughly a 1:2.2 loss exchange. A force ratio is always the larger, more dramatic-looking number — do not read it as losses.
+They are linked by the empirical exponent α ≈ 0.557 derived in D1: **LER ≈ force_ratio^0.557**. A 5.3:1 force ratio therefore implies roughly a 1:2.5 loss exchange. A force ratio is always the larger, more dramatic-looking number — do not read it as losses.
 
 Every table reporting a force ratio also reports the implied LER. These implied figures are *converted* from the force ratio using α, not independently simulated. The directly-modelled LERs from the engagement runs appear in D1 and range 1:2.3 to 1:4.0, which brackets the converted values.
 
@@ -31,22 +31,22 @@ Every table reporting a force ratio also reports the implied LER. These implied 
 
 | | US | China |
 |---|---|---|
-| Committed / based | 390 fighters + 72 tankers | 750 fighters |
-| Ramp spots used | 607 of 620 available | not binding |
-| Airborne over the Strait | **88.6** | **380.1** |
-| **Force ratio (airborne)** | | **4.3 : 1 against** |
-| Implied loss exchange | | ~1 : 2.2 |
+| Committed / based | 390 fighters + 76 tankers | 750 fighters |
+| Ramp spots used | 619 of 620 available | not binding |
+| Airborne over the Strait | **71.9** | **380.1** |
+| **Force ratio (airborne)** | | **5.3 : 1 against** |
+| Implied loss exchange | | ~1 : 2.5 |
 
 The build-up to that figure, showing what each correction contributed:
 
 | Configuration | US airborne | China airborne | Force ratio | Implied LER |
 |---|---|---|---|---|
-| 620 based, no Chinese tanking, no crew rotation | 82.9 | 167.2 | 2.0 : 1 | 1 : 1.5 |
-| + Chinese tanking | 82.9 | 267.2 | 3.2 : 1 | 1 : 1.9 |
-| + 24h crew rotation, both sides | 132.6 | 380.1 | 2.9 : 1 | 1 : 1.8 |
-| **+ basing capacity and tanker ramp competition** | **88.6** | **380.1** | **4.3 : 1** | **1 : 2.3** |
+| 620 based, no Chinese tanking, no crew rotation | 68.0 | 239.9 | 3.5 : 1 | 1 : 2.0 |
+| + Chinese tanking | 68.0 | 267.2 | 3.9 : 1 | 1 : 2.1 |
+| + 24h crew rotation, both sides | 107.3 | 380.1 | 3.5 : 1 | 1 : 2.0 |
+| **+ basing capacity and tanker ramp competition** | **71.9** | **380.1** | **5.3 : 1** | **1 : 2.5** |
 
-The first three rows assume 620 fighters can be based forward with tankers occupying no ramp space. They cannot. Enforcing capacity gives a self-consistent ceiling of 390 fighters plus the 72 tankers required to fly them — beyond which additional fighters displace the tankers that make them useful.
+The first three rows assume 620 fighters can be based forward with tankers occupying no ramp space. They cannot. Enforcing capacity gives a self-consistent ceiling of 390 fighters plus the 76 tankers required to fly them — beyond which additional fighters displace the tankers that make them useful.
 
 **Attrition consequence.** Across engagement runs the US committed force was annihilated under every parameter set tested, at loss-exchange ratios of 1:2.3 to 1:4.0 against, with China retaining 56–94% of its in-range fleet depending on force size and Pk. The exchange ratio proved insensitive to absolute force size — it is set by the on-station ratio and by Pk.
 
@@ -78,7 +78,7 @@ Note the 2023 reorganisation transferred roughly 300 shore-based fixed-wing comb
 |---|---|---|
 | Carrier air wing | ~44 strike fighters (34 Super Hornet, 10 F-35C) | **Sourced** — typical wing composition; F-35C transition incomplete across wings. |
 | Carriers available | 8 of 11; 4 deployed mid-2026 | **Sourced** — three simultaneously unavailable in 2026 (Ford fire repair, Truman entering RCOH, Stennis in maintenance). Fleet Response Plan doctrine claims 6 surge-capable within 30 days, but readiness has run near 50%. |
-| Fighter combat radii | 400nm F/A-18E, 620 F-35C, 670 F-35A, 790 F-15E/EX | **Sourced**, though published figures vary by profile and loadout. |
+| Fighter combat radii | 400nm F/A-18E, 670 F-35C, 590 F-35A, 790 F-15E/EX | **Sourced** — each type in its typical air-to-air CAP fit: stealth types on internal fuel, F/A-18E with 2 external tanks, F-15E/EX with CFTs. Published figures vary by profile and loadout. |
 | **Total forward ramp capacity** | **620 fighter spots** | **ESTIMATED — the weakest number in the model.** Sum of the band estimates below. |
 | Kyushu | 120 | **ESTIMATED.** Tsuiki, Nyutabaru, Ashiya, Kanoya plus civil fields — roughly 5 squadrons' worth of US aircraft *on top of* resident JASDF. |
 | W Honshu | 130 | **ESTIMATED.** Iwakuni, Komatsu, Hofu, Miho. |
@@ -104,14 +104,14 @@ Sortie counts are the wrong metric. What matters is **f**, the fraction of a bas
 
 | Base | To tanker | Sortie | Sorties/day | f |
 |---|---|---|---|---|
-| Kyushu | 735nm | 6.86h | 2.71 | 0.243 |
-| W Honshu | 856nm | 7.40h | 2.55 | 0.229 |
-| C Honshu | 1,033nm | 8.19h | 2.36 | 0.212 |
-| Kanto | 1,133nm | 8.63h | 2.26 | 0.203 |
-| Guam | 1,270nm | 9.24h | 2.14 | 0.192 |
-| Misawa | 1,412nm | 9.87h | 2.02 | 0.182 |
+| Kyushu | 735nm | 6.36h | 2.87 | 0.198 |
+| W Honshu | 856nm | 6.90h | 2.70 | 0.186 |
+| C Honshu | 1,033nm | 7.69h | 2.48 | 0.171 |
+| Kanto | 1,133nm | 8.13h | 2.37 | 0.164 |
+| Guam | 1,270nm | 8.74h | 2.23 | 0.154 |
+| Misawa | 1,412nm | 9.37h | 2.11 | 0.146 |
 
-Chinese equivalents run **0.44–0.53** — roughly double the best US figure, from bases 90–540nm from the Strait with tankers orbiting over their own territory.
+Chinese blended equivalents run **0.44–0.53** — well over double the best US figure, from bases 90–540nm from the Strait with tankers orbiting over their own territory. (The J-16 half of the mix runs 0.53–0.69; the J-10C with 3 tanks, 0.36–0.38.)
 
 ---
 
@@ -123,11 +123,11 @@ US fighters cannot loiter over the Strait on internal fuel from any survivable b
 
 | Tanker line from Strait | F/A-18E | F-35C | F-35A | F-15E |
 |---|---|---|---|---|
-| 200nm | 1.24h | 2.61h | 2.92h | 3.67h |
-| 300nm | 0.62h | 1.99h | 2.30h | 2.96h |
-| 400nm | **cannot reach** | 1.37h | 1.68h | 2.43h |
-| 500nm | cannot reach | 0.75h | 1.06h | 1.86h |
-| 600nm+ | cannot reach | 0.12h | 0.44h | 1.18h |
+| 200nm | 1.24h | 2.92h | 2.43h | 3.67h |
+| 300nm | 0.62h | 2.30h | 1.80h | 3.05h |
+| 400nm | **cannot reach** | 1.68h | 1.18h | 2.43h |
+| 500nm | cannot reach | 1.06h | 0.56h | 1.80h |
+| 600nm+ | cannot reach | 0.44h | cannot reach | 1.18h |
 
 **There is no safe line.** A J-20 at ~1,100nm combat radius carrying PL-17 at ~215nm can threaten a tanker essentially anywhere it could usefully orbit. The line cannot be chosen for safety, only for whether the mission is possible.
 
@@ -163,29 +163,29 @@ This does not reduce on-station time, because sortie rate is capped by maintenan
 
 | Base | f | Capacity | Cumulative aircraft | Cumulative airborne |
 |---|---|---|---|---|
-| Kyushu | 0.243 | 120 | 120 | 29.2 |
-| W Honshu | 0.229 | 130 | 250 | 59.0 |
-| C Honshu | 0.212 | 140 | 390 | 88.6 |
-| Kanto | 0.203 | 60 | 450 | 100.8 |
-| Guam | 0.192 | 90 | 540 | 118.0 |
-| Misawa | 0.182 | 80 | 620 | 132.6 |
+| Kyushu | 0.198 | 120 | 120 | 23.8 |
+| W Honshu | 0.186 | 130 | 250 | 48.0 |
+| C Honshu | 0.171 | 140 | 390 | 71.9 |
+| Kanto | 0.164 | 60 | 450 | 81.7 |
+| Guam | 0.154 | 90 | 540 | 95.6 |
+| Misawa | 0.146 | 80 | 620 | 107.3 |
 
 Each additional aircraft goes to a worse base, so marginal presence falls as the force grows. Tanker requirement scales with the force, and a KC-135 footprint is roughly 3 fighter spots:
 
 | Fighters | Tankers required | Ramp spots | Feasible |
 |---|---|---|---|
-| 250 | 45 | 385 | yes |
-| **390** | **72** | **607** | **at the limit** |
-| 450 | 84 | 702 | no |
-| 620 | 120 | 980 | no |
+| 250 | 48 | 393 | yes |
+| **390** | **76** | **619** | **at the limit** |
+| 450 | 89 | 717 | no |
+| 620 | 126 | 999 | no |
 
 | Tankers based forward | Spots displaced | Fighters that fit | Airborne | Force ratio | Implied LER |
 |---|---|---|---|---|---|
-| 0 | 0 | 620 | 132.6 | 2.9 : 1 | 1 : 1.8 |
-| 60 | 180 | 440 | 98.7 | 3.8 : 1 | 1 : 2.1 |
-| 100 | 300 | 320 | 73.8 | 5.2 : 1 | 1 : 2.5 |
-| 140 | 420 | 200 | 47.5 | 8.0 : 1 | 1 : 3.2 |
-| 180 | 540 | 80 | 19.5 | 19.5 : 1 | 1 : 5.2 |
+| 0 | 0 | 620 | 107.3 | 3.5 : 1 | 1 : 2.0 |
+| 60 | 180 | 440 | 80.1 | 4.7 : 1 | 1 : 2.4 |
+| 100 | 300 | 320 | 60.0 | 6.3 : 1 | 1 : 2.8 |
+| 140 | 420 | 200 | 38.7 | 9.8 : 1 | 1 : 3.6 |
+| 180 | 540 | 80 | 15.9 | 24.0 : 1 | 1 : 5.9 |
 
 **The tanker fleet needed to make the fighters useful displaces the fighters it exists to support.** The system saturates at ~390 fighters regardless of how many airframes the US could otherwise deploy. Sending more does not help; there is nowhere to put them.
 
@@ -208,7 +208,7 @@ Mass-as-screen is unambiguously better. Paying for a separate barrier *and* stan
 
 ## C2. Crew rotation is the only variable favouring the US *(pre-capacity config)*
 
-24h crew rotation lifts US airborne presence **+60%** against China's **+42%**, improving that configuration's ratio from 3.22:1 to 2.87:1. The reason is structural rather than incidental: long US sorties were crew-hour-limited, while short Chinese sorties were already near the maintenance ceiling with less headroom to unlock. Distance is what created the US headroom in the first place.
+24h crew rotation lifts US airborne presence **+58%** against China's **+42%**, improving that configuration's ratio from 3.93:1 to 3.54:1. The reason is structural rather than incidental: long US sorties were crew-hour-limited, while short Chinese sorties were already near the maintenance ceiling with less headroom to unlock. Distance is what created the US headroom in the first place.
 
 ## C3. Chinese J-20 allocation is nearly free *(pre-capacity config)*
 
@@ -252,23 +252,23 @@ Same model, projected force structures. Vulnerability of the basing is still exc
 
 | Scenario | Max sustainable | US airborne | China airborne | Force ratio | Implied LER |
 |---|---|---|---|---|---|
-| 2026 baseline | 390 + 72 tankers | 88.6 | 380 | 4.3 : 1 | 1 : 2.3 |
-| 2030, same mix and basing | 390 + 72 | 88.6 | 710 | **8.0 : 1** | **1 : 3.2** |
-| 2030, F-35A/F-15EX/CCA mix | 430 + 78 | 104.4 | 710 | 6.8 : 1 | 1 : 2.9 |
-| 2030 + Philippine access | 570 + 106 | 134.2 | 710 | 5.3 : 1 | 1 : 2.5 |
-| 2030 + Philippines + 30% more ramp | 740 + 139 | 172.1 | 710 | 4.1 : 1 | 1 : 2.2 |
+| 2026 baseline | 390 + 76 tankers | 71.9 | 380 | 5.3 : 1 | 1 : 2.5 |
+| 2030, same mix and basing | 390 + 76 | 71.9 | 710 | **9.9 : 1** | **1 : 3.6** |
+| 2030, F-35A/F-15EX/CCA mix | 430 + 80 | 94.3 | 710 | 7.5 : 1 | 1 : 3.1 |
+| 2030 + Philippine access | 560 + 107 | 119.3 | 710 | 6.0 : 1 | 1 : 2.7 |
+| 2030 + Philippines + 30% more ramp | 730 + 142 | 152.3 | 710 | 4.7 : 1 | 1 : 2.4 |
 
-**No modelled US measure recovers the 2026 position.** The best case — opening Philippine basing *and* expanding ramp capacity by 30% — returns the ratio to 4.1:1, which is roughly where it stood in 2026, four years later and against a doubled adversary force.
+**Only the maximal US measure does better than the 2026 position.** The best case — opening Philippine basing *and* expanding ramp capacity by 30% — brings the ratio to 4.7:1, an improvement on 2026's 5.3:1, but four years later and against a doubled adversary force.
 
 **Airframe leverage at Kyushu, 2030 mix:**
 
 | Type | Radius | Loiter | Sorties/day | f | Ramp cost |
 |---|---|---|---|---|---|
-| F-35A | 670nm | 2.15h | 2.71 | 0.243 | 1.0 spot |
+| F-35A | 590nm | 1.66h | 2.87 | 0.198 | 1.0 spot |
 | F-15EX | 790nm | 2.90h | 2.50 | 0.302 | 1.0 spot |
 | CCA | 700nm | 2.34h | 2.65 | 0.259 | 0.5 spot |
 
-**F-15EX is the strongest single airframe lever** — 25% more on-station time per aircraft than the F-35A, purely from radius. **CCA's contribution is ramp footprint rather than loiter**: at half a spot it fits more airframes onto fixed concrete, which is precisely the binding constraint identified in B1. That is a stronger argument for CCA in this scenario than the usual cost-per-airframe case.
+**F-15EX is the strongest single airframe lever** — 52% more on-station time per aircraft than the F-35A, purely from radius. **CCA's contribution is ramp footprint rather than loiter**: at half a spot it fits more airframes onto fixed concrete, which is precisely the binding constraint identified in B1. That is a stronger argument for CCA in this scenario than the usual cost-per-airframe case.
 
 **The structural asymmetry.** Chinese growth is a production problem solved on existing lines. The US response is a real-estate problem: presence cannot be added without new concrete, and the concrete is in allied territory inside the missile envelope. Two of the three US improvements modelled — Philippine access and ramp expansion — have lead times measured in years and depend on host-nation politics rather than procurement.
 
@@ -283,7 +283,7 @@ Ranked by leverage:
 1. **Kadena surviving.** At 472nm from the Strait against 825nm from Kyushu, Okinawa is the only basing that makes the fuel geometry tractable. Its loss changes the arithmetic category rather than degrading it.
 2. **A tanker line inside 300nm holding.** Worth more than any quantity of additional tankers — Super Hornet loiter roughly doubles. Requires the J-20/PL-17 threat to be manageable, which is the load-bearing assumption of the whole analysis.
 3. **Ramp capacity in Japan.** The force ceiling is a concrete-and-fuel problem. Dispersal to civilian fields raises capacity only if munitions, fuel and maintenance follow.
-4. **Longer-ranged US fighters.** The F-15E at 790nm radius is the only type retaining useful loiter past a 400nm tanker line.
+4. **Longer-ranged US fighters.** The F-15E at 790nm radius and the F-35C at 670nm are the only types retaining useful loiter past a 400nm tanker line.
 5. **Chinese maintenance limits.** The 4 sorties/day ceiling is what prevents the Chinese figures running away entirely.
 
 ---
@@ -310,4 +310,5 @@ Ranked by leverage:
 - US carrier surge of 6–7 CVNs was too generous: 8 of 11 are available and 4 were deployed as of mid-2026.
 - Kadena and mainland Japan aircraft were double-counted in early runs while simultaneously being treated as cratered.
 - The J-20/PL-17 pairing was described as a single airframe; the PL-17 is too long for the J-20's bay and flies externally on the J-16, making the shot cooperative.
-- The headline initially reported 2.9:1 from an unconstrained 620-fighter force. Enforcing capacity and tanker ramp competition gives 4.3:1.
+- The headline initially reported 2.9:1 from an unconstrained 620-fighter force. Enforcing capacity and tanker ramp competition gave 4.3:1.
+- A combat-radius audit (August 2026) re-based every type on its typical air-to-air CAP fit — stealth types on internal fuel, non-stealth types with their usual external fuel. This corrected the F-35A and F-35C, which had been swapped relative to published data (670/620 → 590/670), and the F-22A (590 → 530, unused in the computation); it confirmed the F/A-18E (400, with 2 external tanks), F-15E/EX (790, with CFTs), J-10C (450, with 3 tanks), J-16 (800, Flanker internal fuel) and J-20 (1,100, internal). The F-35A correction — the whole modelled US force — moved the headline 4.3:1 → 5.3:1.
