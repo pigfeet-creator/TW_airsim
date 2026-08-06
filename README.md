@@ -7,9 +7,9 @@ generate, and what does the exchange look like?**
 
 ## Headline result
 
-**2026, capacity-constrained: 390 fighters + 72 tankers filling 607 of 620
-available ramp spots. US 88.6 aircraft airborne over the Strait against
-China's 380.1 — a force ratio of 4.3:1 against, implying roughly 1:2.3 in
+**2026, capacity-constrained: 390 fighters + 76 tankers filling 619 of 620
+available ramp spots. US 71.9 aircraft airborne over the Strait against
+China's 380.1 — a force ratio of 5.3:1 against, implying roughly 1:2.5 in
 losses.**
 
 The binding constraints are geometry and ramp space, not aircraft quality.
@@ -104,8 +104,8 @@ it as losses.
 **Two things that look like pro-China omissions but aren't.** Taiwanese
 aircraft are out of action in the opening phase. Allied JASDF aircraft hit the
 *same* ceiling — the constraint is on airframes in theatre, not US airframes.
-200 Japanese fighters need ~37 more tankers costing ~111 ramp spots against a
-system already at 607/620. Allied participation changes the composition of the
+200 Japanese fighters need ~39 more tankers costing ~117 ramp spots against a
+system already at 619/620. Allied participation changes the composition of the
 390, not the total.
 
 ## Where the airframe numbers come from
@@ -125,8 +125,10 @@ others — but 70–85% is an inference, not a published figure), and 75% readin
 a generic planning assumption. Committed force = 1,000 × 0.75 = **750**.
 
 **US — sourced.** Carrier air wing ~44 strike fighters (34 Super Hornet, 10 F-35C).
-8 of 11 carriers available with 4 deployed mid-2026. Combat radii: 400nm F/A-18E,
-620 F-35C, 670 F-35A, 790 F-15E/EX.
+8 of 11 carriers available with 4 deployed mid-2026. Combat radii, each type in
+its typical air-to-air CAP fit (stealth types internal fuel, F/A-18E with 2
+external tanks, F-15E/EX with CFTs): 400nm F/A-18E, 670 F-35C, 590 F-35A,
+790 F-15E/EX.
 
 **US — estimated by me, and this is the weakest part of the model.** The 620-spot
 forward ramp total is the sum of my band estimates: Kyushu 120, W Honshu 130,
